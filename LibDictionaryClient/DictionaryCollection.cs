@@ -937,7 +937,7 @@ namespace LibDictionaryClient
 		{
 			if (!bIsValid) throw new Exception("Collection has been destroyed!");
 
-			JsonHttpRequesterImpl.Response response = parent.Requester.Get(IProtocolFunctions.GETMETADATA, true,
+			JsonHttpRequesterImpl.Response response = parent.Requester.Get(IProtocolFunctions.PUTMETADATA, true,
 				new KeyValuePair<string, object>("colname", collectionName),
 				new KeyValuePair<string, object>("key", key),
 				new KeyValuePair<string, object>("value", value));
